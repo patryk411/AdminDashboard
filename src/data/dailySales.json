@@ -1,0 +1,38 @@
+[
+    {
+        "label": "Apr",
+        "value": 50
+    },
+    {
+        "label": "May",
+        "value": 40
+    },
+    {
+        "label": "Jun",
+        "value": 300
+    },
+    {
+        "label": "Jul",
+        "value": 320
+    },
+    {
+        "label": "Aug",
+        "value": 500
+    },
+    {
+        "label": "Sep",
+        "value": 350
+    },
+    {
+        "label": "Oct",
+        "value": 200
+    },
+    {
+        "label": "Nov",
+        "value": 230
+    },
+    {
+        "label": "Dec",
+        "value": 500
+    }
+]
