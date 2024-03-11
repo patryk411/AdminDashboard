@@ -23,8 +23,8 @@ export default function DailyChart() {
 	};
 
 	return (
-		<div className='grid grid-cols-3 font-roboto'>
-			<div className='col-span-1 ml-6 mt-6 bg-white shadow-lg shadow-boxShadow rounded-xl'>
+		<div className='grid lg:grid-cols-3 md:grid-cols-4 font-roboto'>
+			<div className='lg:col-span-1 md:col-span-2 ml-6 mt-6 sm:mr-6 bg-white shadow-lg shadow-boxShadow rounded-xl'>
 				<div className='bg-blue rounded-xl py-4 px-2 m-4'>
 					<Bar
 						data={{
@@ -55,7 +55,7 @@ export default function DailyChart() {
 					</div>
 				</div>
 			</div>
-			<div className='col-span-1 ml-6 mt-6 bg-white shadow-lg shadow-boxShadow rounded-xl'>
+			<div className='lg:col-span-1 md:col-span-2 ml-6 mt-6 sm:mr-6 bg-white shadow-lg shadow-boxShadow rounded-xl'>
 				<div className='bg-green rounded-xl py-4 px-2 m-4'>
 					<Line
 						data={{
@@ -88,7 +88,7 @@ export default function DailyChart() {
 					</div>
 				</div>
 			</div>
-			<div className='col-span-1 ml-6 mt-6 mr-6 bg-white shadow-lg shadow-boxShadow rounded-xl'>
+			<div className='lg:col-span-1 md:col-span-2 ml-6 mt-6 mr-6 bg-white shadow-lg shadow-boxShadow rounded-xl'>
 				<div className='bg-blackBg rounded-xl py-4 px-2 m-4'>
 					<Line
 						data={{

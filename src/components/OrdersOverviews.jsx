@@ -3,7 +3,7 @@ import NewOverview from './OrdersOverv/NewOverview';
 
 export default function OrdersOverviews({ icon, title, time }) {
 	return (
-		<div className='col-span-1 ml-6 p-6 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl'>
+		<div className='lg:col-span-1 sm:col-span-3 lg:ml-6 md:ml-0 lg:mt-0 sm:mt-6 p-6 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl'>
 			<div>
 				<h3 className='text-title text-md font-bold'>Orders overviews</h3>
 				<div className='flex flex-row justify-start items-start text-sm my-4'>
@@ -12,7 +12,7 @@ export default function OrdersOverviews({ icon, title, time }) {
 						<span className='font-bold'>24%</span> this month
 					</p>
 				</div>
-				<div className='py-6 relative'>
+				<div className='lg:py-6 md:mt-6 relative'>
 					<NewOverview icon='notifications' title='New order #1832412' time='21 DEC 11 PM' />
 					<NewOverview icon='inventory_2' title='$2400, Design changes' time='22 DEC 7:20 PM' />
 					<NewOverview icon='shopping_cart' title='Server payments for April' time='21 DEC 9:34 PM' />

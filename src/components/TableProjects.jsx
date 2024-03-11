@@ -16,7 +16,7 @@ export default function TableProjects({
 	projectCmplt,
 }) {
 	return (
-		<div className='mx-12 my-12 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl px-4 pb-6'>
+		<div className='md:mx-12 sm:mx-6 md:my-12 sm:my-6 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl px-4 pb-6'>
 			<TablesBar barTitle={barTitle} />
 			<div className='mt-6'>
 				<TableProjectsHeading

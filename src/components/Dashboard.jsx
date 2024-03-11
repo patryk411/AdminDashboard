@@ -1,6 +1,15 @@
-import React from 'react';
+// Dashboard.jsx
+import React, { useState } from 'react';
+import Navigation from './Navigation';
+import NavigationMobile from './NavigationMobile';
 
 export default function Dashboard({ currentPage }) {
+	const [isNavOpen, setIsNavOpen] = useState(false);
+
+	const handleToggleNav = () => {
+		setIsNavOpen(!isNavOpen);
+	};
+
 	return (
 		<div className='my-6 ml-6'>
 			<div className='flex flex-row justify-between py-1 px-4'>
@@ -31,6 +40,9 @@ export default function Dashboard({ currentPage }) {
 								<i className='fa-solid fa-user text-xs text-white'></i>
 							</div>
 						</a>
+						<button onClick={handleToggleNav} className='mx-2 lg:hidden sm:block'>
+							<span className='material-icons text-xl text-iconsBg font-bold'>{isNavOpen ? 'close' : 'menu'}</span>
+						</button>
 						<a href='' className='mx-2'>
 							<i className='fa-solid fa-gear text-xl text-iconsBg'></i>
 						</a>
@@ -40,6 +52,7 @@ export default function Dashboard({ currentPage }) {
 					</div>
 				</div>
 			</div>
+			{isNavOpen && <NavigationMobile />}
 		</div>
 	);
 }

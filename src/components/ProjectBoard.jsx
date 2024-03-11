@@ -24,8 +24,8 @@ export default function ProjectBoard({
 	const now = 60;
 
 	return (
-		<div className='col-span-2 py-6 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl'>
-			<div className='flex flex-row justify-between items-center px-6'>
+		<div className='lg:col-span-2 sm:col-span-3 py-6 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl'>
+			<div className='flex flex-row  justify-between items-center px-6'>
 				<div>
 					<h3 className='text-md text-title font-bold capitalize mb-2'>Projects</h3>
 					<p className='flex flex-row items-end text-sm text-iconsBg'>

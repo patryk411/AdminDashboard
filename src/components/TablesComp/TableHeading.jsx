@@ -15,7 +15,7 @@ export default function TableHeading({ tabTitle1, tabTitle2, tabTitle3, tabTitle
 			<div className='col-span-1'>
 				<p className='text-small+ text-iconsBg font-bold'>{tabTitle4}</p>
 			</div>
-			<div className='col-span-1'>
+			<div className='col-span-1 flex justify-center'>
 				<p className='text-small+ text-iconsBg font-bold'>{tabTitle5}</p>
 			</div>
 		</div>

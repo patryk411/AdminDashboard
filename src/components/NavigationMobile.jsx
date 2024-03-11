@@ -12,9 +12,9 @@ const navigation = [
 	{ name: 'Sign Up', href: '/sign-up', icon: 'assignment', current: false },
 ];
 
-export default function Navigation() {
+export default function NavigationMobile() {
 	return (
-		<nav className='lg:flex sm:hidden flex-col fixed justify-between min-h-screen bg-gradient-to-r from-slate-900 to-gray-600 rounded-xl m-6 p-6 z-50'>
+		<nav className='flex flex-col fixed top-0 left-0 justify-between h-navH bg-gradient-to-r from-slate-900 to-gray-600 rounded-xl m-6 p-6 z-50'>
 			<div className=''>
 				<div className='flex flex-row items-center justify-center pt-6 pb-2 px-8'>
 					<img src={navImg} alt='' className='h-8 w-8 mr-1' />

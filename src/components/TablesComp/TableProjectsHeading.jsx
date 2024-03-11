@@ -6,10 +6,10 @@ export default function TableProjectsHeading({ tabTitle1, tabTitle2, tabTitle3, 
 			<div className='col-span-3'>
 				<p className='text-small+ text-iconsBg font-bold'>{tabTitle1}</p>
 			</div>
-			<div className='col-span-2'>
+			<div className='col-span-2 flex flex-col items-center'>
 				<p className='text-small+ text-iconsBg font-bold'>{tabTitle2}</p>
 			</div>
-			<div className='col-span-2'>
+			<div className='col-span-2 flex flex-col items-center'>
 				<p className='text-small+ text-iconsBg font-bold'>{tabTitle3}</p>
 			</div>
 			<div className='col-span-2 flex flex-col items-center'>

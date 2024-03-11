@@ -9,11 +9,11 @@ import OrdersOverviews from '../../components/OrdersOverviews';
 export default function DashboardPage({ currentPage }) {
 	return (
 		<div>
-			<div className='grid grid-cols-10'>
-				<div className='col-span-2'>
+			<div className='grid lg:grid-cols-10'>
+				<div className='lg:col-span-2'>
 					<Navigation />
 				</div>
-				<div className='col-span-8'>
+				<div className='lg:col-span-8 md:col-span-12'>
 					<Dashboard currentPage='Dashboard' />
 					<DailyInfo />
 					<DailyChart />

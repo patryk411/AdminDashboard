@@ -3,8 +3,8 @@ import React from 'react';
 export default function DailyInfoBox({ infoIcon, infoTitle, infoCount, infoPer, infoPerTitle }) {
 	return (
 		<div
-			className={`bg-white col-span-1 ml-6 mt-6 px-4 py-4 shadow-lg shadow-boxShadow rounded-xl ${
-				infoIcon === 'person_add' ? 'mr-6' : ''
+			className={`bg-white lg:col-span-1 md:col-span-2 sm:col-span-4 ml-6 mt-6 lg:mb-0 sm:mb-6 sm:mr-6 px-4 py-4 shadow-lg shadow-boxShadow rounded-xl ${
+				infoIcon === 'person_add' ? 'mr-6' : infoIcon === 'leaderboard' ? 'lg:mr-0 md:mr-6' : ''
 			}`}>
 			<div className='grid grid-cols-2 relative'>
 				<div

@@ -9,15 +9,15 @@ export default function TableTrProjects({ projectImg, projectName, projectBudget
 				</div>
 				<p className='text-sm text-title font-bold'>{projectName}</p>
 			</div>
-			<div className='col-span-2 flex flex-col justify-center'>
+			<div className='col-span-2 flex flex-col justify-center sm:items-center'>
 				<p className='text-xs text-iconsBg font-bold'>{projectBudget}</p>
 			</div>
-			<div className='col-span-2 flex flex-col justify-center'>
+			<div className='col-span-2 flex flex-col justify-center sm:items-center'>
 				<div className='flex flex-col justify-center'>
 					<p className='text-xs px-1 py-2 text-iconsBg font-bold'>{projectStatus}</p>
 				</div>
 			</div>
-			<div className='col-span-2 flex flex-col w-44 justify-center'>
+			<div className='col-span-2 flex flex-col w-44 sm:w-auto justify-center'>
 				<div className='bg-boxShadow rounded-xl shadow-sm overflow-hidden'>
 					<div className='relative h-1.5 flex items-center justify-center'>
 						<div

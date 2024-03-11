@@ -8,11 +8,11 @@ import TablesBar from '../../components/TablesComp/TablesBar';
 export default function TablePage({ currentPage, barTitle, tabTitle1, tabTitle2, tabTitle3, tabTitle4, tabTitle5 }) {
 	return (
 		<div>
-			<div className='grid grid-cols-10'>
+			<div className='grid lg:grid-cols-10 sm:grid-cols-12'>
 				<div className='col-span-2'>
 					<Navigation />
 				</div>
-				<div className='col-span-8'>
+				<div className='lg:col-span-8 sm:col-span-12'>
 					<Dashboard currentPage='Tables' />
 					<Table
 						barTitle='Authors Table'

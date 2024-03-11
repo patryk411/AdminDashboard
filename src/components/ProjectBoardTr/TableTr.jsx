@@ -12,7 +12,7 @@ export default function TableTr({ img, userName, userMail, userFn, userFn2, user
 					<p className='text-xs text-title font-light'>{userMail}</p>
 				</div>
 			</div>
-			<div className='col-span-1'>
+			<div className='col-span-1 flex flex-col justify-center'>
 				<p className='text-xs text-iconsBg font-bold'>{userFn}</p>
 				<p className='text-xs text-title font-light'>{userFn2}</p>
 			</div>
@@ -27,7 +27,7 @@ export default function TableTr({ img, userName, userMail, userFn, userFn2, user
 			<div className='col-span-1 flex flex-col justify-center'>
 				<p className='text-xs text-iconsBg font-bold'>{userEmployed}</p>
 			</div>
-			<div className='col-span-1 flex flex-col justify-center'>
+			<div className='col-span-1 flex flex-col justify-center sm:items-center'>
 				<p className='text-xs text-iconsBg font-bold'>Edit</p>
 			</div>
 		</div>

@@ -9,7 +9,7 @@ import TableHeading from './TablesComp/TableHeading';
 
 export default function Table({ barTitle, tabTitle1, tabTitle2, tabTitle3, tabTitle4, tabTitle5 }) {
 	return (
-		<div className='mx-12 mt-12 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl px-4 pb-6'>
+		<div className='md:mx-12 sm:mx-6 md:mt-12 sm:mt-6 font-roboto bg-white shadow-lg shadow-boxShadow rounded-xl px-4 pb-6'>
 			<TablesBar barTitle={barTitle} />
 			<div className='mt-6'>
 				<TableHeading

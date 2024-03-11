@@ -20,6 +20,7 @@ export default {
         'border': 'rgb(222, 226, 230)',
         'bgDark': 'rgb(25, 25, 25)',
         'red': 'rgb(229, 57, 53)',
+        'bgWhite': 'rgb(248, 249, 250)',
       },
       fontFamily: {
         'roboto': ['Roboto', 'sans-serif'],
@@ -27,7 +28,16 @@ export default {
       fontSize: {
         'small': '9px',
         'small+': '10.5px',
+      },
+      height: {
+        'navH': '95vh'
       }
+    },
+    screens: {
+      'sm': '390px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
     },
   },
   plugins: [],
