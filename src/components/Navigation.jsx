@@ -5,8 +5,6 @@ const navigation = [
 	{ name: 'Dashboard', href: '/', icon: 'dashboard', current: true },
 	{ name: 'Tables', href: '/tablepage', icon: 'table_view', current: false },
 	{ name: 'Billing', href: '/billingpage', icon: 'receipt_long', current: false },
-	{ name: 'RTL', href: '/rtl', icon: 'format_textdirection_r_to_l', current: false },
-	{ name: 'Notifications', href: '/notifications', icon: 'notifications', current: false },
 	{ name: 'Profile', href: '/profile', icon: 'person', current: false },
 	{ name: 'Sign In', href: '/sign-in', icon: 'login', current: false },
 	{ name: 'Sign Up', href: '/sign-up', icon: 'assignment', current: false },
