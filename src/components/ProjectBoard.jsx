@@ -61,8 +61,24 @@ export default function ProjectBoard({
 					pbMember4={per4}
 					pbBudget='$14,000'
 				/>
-				<ProjectsTr pgImg={atlassian} pbDesc='Add Progress Track' pbMember2={per2} pbMember4={per4} pbBudget='$3,000' />
-				<ProjectsTr pgImg={slack} pbDesc='Fix Platform Errors' pbMember1={per1} pbMember3={per3} pbBudget='Not set' />
+				<ProjectsTr
+					pgImg={atlassian}
+					pbDesc='Add Progress Track'
+					pbMember1={per1}
+					pbMember2={per2}
+					pbMember3={per3}
+					pbMember4={per4}
+					pbBudget='$3,000'
+				/>
+				<ProjectsTr
+					pgImg={slack}
+					pbDesc='Fix Platform Errors'
+					pbMember1={per1}
+					pbMember2={per2}
+					pbMember3={per3}
+					pbMember4={per4}
+					pbBudget='Not set'
+				/>
 				<ProjectsTr
 					pgImg={spotify}
 					pbDesc='Launch our Mobile App'
@@ -72,11 +88,21 @@ export default function ProjectBoard({
 					pbMember4={per4}
 					pbBudget='$20,500'
 				/>
-				<ProjectsTr pgImg={jira} pbDesc='Add the New Pricing Page' pbMember4={per4} pbBudget='$500' />
+				<ProjectsTr
+					pgImg={jira}
+					pbDesc='Add the New Pricing Page'
+					pbMember1={per1}
+					pbMember2={per2}
+					pbMember3={per3}
+					pbMember4={per4}
+					pbBudget='$500'
+				/>
 				<ProjectsTr
 					pgImg={invs}
 					pbDesc='Redesign New Online Shop'
 					pbMember1={per1}
+					pbMember2={per2}
+					pbMember3={per3}
 					pbMember4={per4}
 					pbBudget='$2,000'
 				/>

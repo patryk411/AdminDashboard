@@ -8,7 +8,7 @@ import PaymentMethod from '../../components/BillingComp/PaymentMethod';
 import BillingInformation from '../../components/BillingInformation';
 import BillingTransaction from '../../components/BillingTransaction';
 
-export default function BillingPage({ icon, title, text, price }) {
+export default function BillingPage() {
 	return (
 		<div>
 			<div className='grid lg:grid-cols-10 sm:grid-cols-12'>

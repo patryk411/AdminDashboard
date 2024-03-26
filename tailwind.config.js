@@ -46,6 +46,23 @@ export default {
       },
       width: {
         'formW': '430px',
+      },
+      animation: {
+        fadeSlideUp: 'fadeSlideUp 0.5s ease-out'
+      }
+      ,
+      keyframes: {
+        fadeSlideUp: {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(48)',
+          },
+        
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        }
       }
     },
     screens: {
@@ -55,7 +72,8 @@ export default {
       'xl': '1280px',
     },
   },
-  plugins: [],
+  plugins: [
+  ],
   
 }
 

@@ -1,8 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Modal from '../UI/Modal';
 
-export default function TableTr({ img, userName, userMail, userFn, userFn2, userStatus, userEmployed }) {
+export default function TableTr({ img, userName, userMail, userFn, userFn2, userStatus, userEmployed, onUpdate }) {
+	const [modalOpen, setModalOpen] = useState(false);
+	const [rowData, setRowData] = useState({
+		userName,
+		userMail,
+		userFn,
+		userFn2,
+		userStatus,
+		userEmployed,
+	});
+	const handleOpenModal = () => {
+		setModalOpen(true);
+	};
+
+	const handleCloseModal = () => {
+		setModalOpen(false);
+	};
+
+	const handleUpdateRow = () => {
+		onUpdate({ ...rowData, img });
+		setModalOpen(false);
+	};
+
+	const handleChange = e => {
+		const { name, value } = e.target;
+		setRowData({ ...rowData, [name]: value });
+	};
+
 	return (
-		<div className='grid grid-cols-7 py-3 border-border border-t-2'>
+		<div className='grid grid-cols-7 py-3 border-border border-t-2 relative'>
 			<div className='col-span-3 flex flex-row items-center'>
 				<div className='h-9 w-9 mr-3'>
 					<img className='rounded-full' src={img} alt='' />
@@ -28,8 +56,26 @@ export default function TableTr({ img, userName, userMail, userFn, userFn2, user
 				<p className='text-xs text-iconsBg font-bold'>{userEmployed}</p>
 			</div>
 			<div className='col-span-1 flex flex-col justify-center sm:items-center'>
-				<p className='text-xs text-iconsBg font-bold'>Edit</p>
+				<button onClick={handleOpenModal} className='text-xs text-iconsBg font-bold'>
+					Edit
+				</button>
 			</div>
+			{modalOpen && (
+				<Modal
+					img={img}
+					userName={userName}
+					userMail={userMail}
+					userFn={userFn}
+					userFn2={userFn2}
+					userStatus={userStatus}
+					userEmployed={userEmployed}
+					rowData={rowData}
+					onChange={handleChange}
+					onUpdate={handleUpdateRow}
+					onClose={handleCloseModal}
+					modalOpen={modalOpen}
+				/>
+			)}
 		</div>
 	);
 }

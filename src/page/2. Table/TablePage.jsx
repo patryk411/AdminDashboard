@@ -7,7 +7,7 @@ import TablesBar from '../../components/TablesComp/TablesBar';
 
 export default function TablePage({ currentPage, barTitle, tabTitle1, tabTitle2, tabTitle3, tabTitle4, tabTitle5 }) {
 	return (
-		<div>
+		<div className=''>
 			<div className='grid lg:grid-cols-10 sm:grid-cols-12'>
 				<div className='col-span-2'>
 					<Navigation />
@@ -20,7 +20,8 @@ export default function TablePage({ currentPage, barTitle, tabTitle1, tabTitle2,
 						tabTitle2='FUNCTION'
 						tabTitle3='STATUS'
 						tabTitle4='EMPLOYED'
-						tabTitle5='ACTION'></Table>
+						tabTitle5='ACTION'
+					/>
 					<TableProjects
 						barTitle='Projects Table'
 						tabTitle1='PROJECT'
